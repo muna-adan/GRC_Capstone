@@ -45,8 +45,8 @@ Eleven labs that build in layers. Early chapters produce compliant infrastructur
 | Lab | Focus | Stack | Status |
 |-----|-------|-------|--------|
 | **2.3** Building Your First Compliant Resource | S3 bucket satisfying SC-28, AU-3, AU-6, CM-6, AC-3 with machine-readable evidence | Terraform, AWS, NIST 800-53 | ✅ Complete |
-| **2.4** Terraform Modules for Compliance | GCP module hardcoding SC-12, SC-13, SC-28, AU-11, CM-6 so consumers can't disable controls | Terraform, GCP, KMS | Planned |
-| **2.5** IaC as Compliance Evidence | S3 Object Lock vault that refuses deletion by design; bundle, hash, and upload evidence with a recorded VersionId | Terraform, AWS, Object Lock | Planned |
+| **2.4** Terraform Modules for Compliance | GCP module hardcoding SC-12, SC-13, SC-28, AU-11, CM-6 so consumers can't disable controls | Terraform, GCP, KMS | ✅ Complete |
+| **2.5** IaC as Compliance Evidence | S3 Object Lock vault that refuses deletion by design; bundle, hash, and upload evidence with a recorded VersionId | Terraform, AWS, Object Lock | ✅ Complete |
 | **3.3** Writing Compliance Policies in Rego | Three Rego policies against GCP fixtures, each mapped to a control, with test fixtures and a real `terraform plan -json` run | OPA, Rego, GCP | Planned |
 | **3.4** Integrating PaC with Terraform | Conftest wired into the plan workflow as a fail-closed gate; AWS SC-28 and AC-3 policy variants; a proven blocked merge | Conftest, OPA, AWS | Planned |
 | **4.3** Building a GRC Evidence Pipeline | GitHub Actions running plan + Conftest + tfsec on every PR via AWS OIDC, failing closed on high-severity findings | GitHub Actions, AWS, OIDC | Planned |
